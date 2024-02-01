@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="dist/style.css" />
     <link
       rel="icon"
@@ -48,24 +52,29 @@
             you make any room feel complete.
           </p>
           <div class="card__content_profile">
-            <img src="images/avatar-michelle.jpg" alt="Michelle" />
+            <img
+              class="avatar-img"
+              src="images/avatar-michelle.jpg"
+              alt="Michelle"
+            />
             <div class="card__content_profile_info">
               <h2>Michelle Appleton</h2>
               <p>28 Jun 2020 Share</p>
             </div>
-            <div class="card__content_profile_share">
-              <img src="images/icon-share.svg" alt="share icon" />
-            </div>
-          </div>
 
-          <div class="share">
-            <p>Share</p>
-            <ul class="social-media">
-              <li><img src="images/icon-facebook.svg" alt="facebook" /></li>
-              <li><img src="images/icon-twitter.svg" alt="share" /></li>
-              <li><img src="images/icon-pinterest.svg" alt="" /></li>
-            </ul>
-            <div class="triangle"></div>
+            <div id="share-btn" class="card__content_profile_share">
+              <i class="fa-solid fa-share"></i>
+            </div>
+
+            <div id="share-content" class="share">
+              <p>Share</p>
+              <ul class="social-media">
+                <li><img src="images/icon-facebook.svg" alt="facebook" /></li>
+                <li><img src="images/icon-twitter.svg" alt="share" /></li>
+                <li><img src="images/icon-pinterest.svg" alt="" /></li>
+              </ul>
+              <div class="triangle"></div>
+            </div>
           </div>
         </section>
       </main>
@@ -77,5 +86,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Regret546</a>.
     </div>
+
+    <script src="/apps/js/app.js"></script>
   </body>
 </html>

@@ -109,8 +109,6 @@ body {
 }
 
 .card {
-  position: relative;
-  overflow: hidden;
   max-width: 500px;
   display: grid;
   grid-template-columns: 1fr;
@@ -137,10 +135,11 @@ body {
   margin-bottom: 1.4rem;
 }
 .card__content_profile {
+  position: relative;
   display: flex;
   align-items: center;
 }
-.card__content_profile img {
+.card__content_profile .avatar-img {
   height: 45px;
   width: 45px;
   border-radius: 45px;
@@ -164,10 +163,54 @@ body {
   height: 45px;
   width: 45px;
   border-radius: 45px;
+  font-size: 1.5rem;
 }
-.card__content_profile_share img {
-  height: 20px;
-  width: 20px;
+.card__content_profile_share:hover {
+  background-color: var(--clr--dark-grayish-blue);
+  color: var(--clr--white);
+}
+.card__content_profile .share {
+  position: absolute;
+  right: 0;
+  display: none;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--clr--dark-grayish-blue);
+  width: 230px;
+  height: 50px;
+  border: none;
+  border-radius: 1rem;
+  padding: 0 2rem;
+  margin-top: -145px;
+  margin-right: -93px;
+}
+.card__content_profile .share p {
+  font-weight: var(--fw--bold);
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+}
+.card__content_profile .share li {
+  cursor: pointer;
+}
+.card__content_profile .share .social-media {
+  margin-left: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__content_profile .share .triangle {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: -15px;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 15px solid var(--clr--dark-grayish-blue);
+  border-bottom: 40px;
 }
 @media only screen and (min-width: 43.75em) {
   .card {
@@ -197,41 +240,4 @@ body {
   .card__content_profile_info h2 {
     font-size: 1rem;
   }
-}
-.card .share {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--clr--dark-grayish-blue);
-  position: relative;
-  width: 230px;
-  height: 50px;
-  border: none;
-  border-radius: 1rem;
-  padding: 0 2rem;
-}
-.card .share p {
-  font-weight: var(--fw--bold);
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 5px;
-}
-.card .share .social-media {
-  margin-left: 15px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.card .share .triangle {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  bottom: -15px;
-  border-left: 13px solid transparent;
-  border-right: 13px solid transparent;
-  border-top: 15px solid var(--clr--dark-grayish-blue);
-  border-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */
