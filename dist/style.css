@@ -116,10 +116,13 @@ body {
   background-color: var(--clr--white);
   border: none;
   border-radius: 0.7rem;
+  margin-inline: 1rem;
 }
 .card__img img {
   width: 100%;
   height: 100%;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
 }
 .card__content {
   margin-top: 2rem;
@@ -177,19 +180,19 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: var(--clr--dark-grayish-blue);
-  width: 230px;
-  height: 50px;
+  width: 200px;
+  height: 40px;
   border: none;
   border-radius: 1rem;
   padding: 0 2rem;
   margin-top: -145px;
-  margin-right: -93px;
+  margin-right: -41px;
 }
 .card__content_profile .share p {
   font-weight: var(--fw--bold);
   margin: 0;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   letter-spacing: 5px;
 }
 .card__content_profile .share li {
@@ -202,9 +205,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.card__content_profile .share .social-media img {
+  height: 15px;
+  width: 15px;
+}
 .card__content_profile .share .triangle {
   position: absolute;
-  left: 50%;
+  left: 69%;
   transform: translate(-50%, 0);
   bottom: -15px;
   border-left: 13px solid transparent;
@@ -217,10 +224,14 @@ body {
     grid-template-columns: 40% 60%;
     grid-auto-rows: 1fr;
     max-width: 900px;
+    margin-inline: 3rem;
   }
-  .card_img img {
-    -o-object-fit: contain;
-       object-fit: contain;
+  .card__img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
   }
   .card__content {
     display: flex;
@@ -239,5 +250,52 @@ body {
   }
   .card__content_profile_info h2 {
     font-size: 1rem;
+  }
+  .card__content_profile .share {
+    position: absolute;
+    right: 0;
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--clr--dark-grayish-blue);
+    width: 230px;
+    height: 50px;
+    border: none;
+    border-radius: 1rem;
+    padding: 0 2rem;
+    margin-top: -145px;
+    margin-right: -93px;
+  }
+  .card__content_profile .share p {
+    font-weight: var(--fw--bold);
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+  }
+  .card__content_profile .share li {
+    cursor: pointer;
+  }
+  .card__content_profile .share .social-media {
+    margin-left: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card__content_profile .share .social-media img {
+    width: 20px;
+    height: 20px;
+  }
+  .card__content_profile .share .triangle {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -14px;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 15px solid var(--clr--dark-grayish-blue);
+    border-bottom: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
