@@ -9,6 +9,33 @@
   border: none;
   border-radius: 0.7rem;
   margin-inline: 1rem;
+
+  @keyframes show {
+    /*   0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    } */
+
+    0% {
+      transform: translateY(30%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .show {
+    animation: show 0.3s forwards;
+  }
+
   &__img {
     img {
       width: 100%;
@@ -69,6 +96,11 @@
           background-color: var(--clr--dark-grayish-blue);
           color: var(--clr--white);
         }
+
+        &.clicked {
+          background-color: var(--clr--dark-grayish-blue);
+          color: var(--clr--white);
+        }
       }
       .share {
         position: absolute;
@@ -114,7 +146,7 @@
           position: absolute;
           left: 69%;
           transform: translate(-50%, 0);
-          bottom: -15px;
+          bottom: -14px;
           border-left: 13px solid transparent;
           border-right: 13px solid transparent;
           border-top: 15px solid var(--clr--dark-grayish-blue);

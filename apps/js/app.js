@@ -6,7 +6,10 @@ shareButton.addEventListener("click", function () {
 
   if (computedStyle.display === "none") {
     shareContent.style.display = "flex";
+    shareContent.classList.add("show");
+    shareButton.classList.add("clicked");
   } else {
     shareContent.style.display = "none";
+    shareButton.classList.remove("clicked");
   }
 });
